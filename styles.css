@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F7F7F7;
+    background-color: #FFFBF5;
     font-weight: 500;
     
 }
@@ -63,16 +63,20 @@ body {
 }
 
 .navbar__container {
-    background-color: #6D9886;
+    background-color: #C3ACD0;
     padding: 10px 10px;
     z-index: -2;
+}
+
+.container {
+  margin-top: 100px;
 }
 
 /* Section 1  Summary*/
 
 /* .section__header::before {
   content: '';
-  background: #6D9886;
+  background: #C3ACD0;
   height: 5px;
   width: 200px;
   margin-left: auto;
@@ -84,7 +88,7 @@ body {
 
 .section__header::after {
 content: '';
-background: #6D9886;
+background: #C3ACD0;
 height: 3px;
 width: 200px;
 margin-left: auto;
@@ -99,7 +103,7 @@ transform: translateY(8px);
 
 .Summary__section__heading {
     padding: 10px;
-    border-bottom: 3px solid #6D9886;
+    border-bottom: 3px solid #C3ACD0;
 
 }
 
@@ -113,7 +117,7 @@ transform: translateY(8px);
     height: 10px;
     width: 75%;
     margin-bottom: 10px;
-    background: #dae5e1;
+    background: #C3ACD0;
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
@@ -129,19 +133,6 @@ transform: translateY(8px);
     }
   }
 
- .small__headings {
-  width: 100%;
-  border-bottom: 2px solid #20262E;
-  margin-bottom: 15px;
-  transition: 0.3s;
-  padding: 10px 0px;
- }
-
- .small__headings:hover {
-  color: #393E46;
-  border-bottom: 2px solid #393E46;
- }
-
   .bar .progress-line span {
     height: 100%;
     position: absolute;
@@ -149,9 +140,22 @@ transform: translateY(8px);
     transform: scaleX(0);
     transform-origin: left;
     /* background: #6665ee; */
-    background: #6D9886;
+    background: #674188;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
   }
+
+  .small__headings {
+    width: 100%;
+    border-bottom: 2px solid #20262E;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    padding: 10px 0px;
+   }
+  
+   .small__headings:hover {
+    color: #393E46;
+    border-bottom: 2px solid #393E46;
+   }
 
   .bar .progress-line.html span{
     width: 75%;
@@ -199,6 +203,7 @@ transform: translateY(8px);
 
 /* Section 4 Projects  */
 
+
 .projects__elements a {
     width: 300px;
     color: #393E46;
@@ -209,11 +214,14 @@ transform: translateY(8px);
 }
 
 .projects__elements a:hover {
-  color: #6D9886;
-  border-bottom: 2px solid #6D9886;
+  color: #C3ACD0;
+  border-bottom: 2px solid #C3ACD0;
 }
 
 /* Section 5 Internship  */
+
+
+
 .internship__section h3 {
     font-size: 20px;
     font-weight: 600;
@@ -264,7 +272,7 @@ transform: translateY(8px);
 
 /* Footer Section  */
 .footer {
-  background-color: #6D9886;
+  background-color: #C3ACD0;
   padding-bottom: 1px;
 }
 
@@ -278,13 +286,22 @@ transform: translateY(8px);
 .footer__links a{
   font-family: 'Montserrat', sans-serif;
   padding: 0 5px;
-  width: 200px;
+  /* width: 120px; */
 }
 
-.footer__link__icons  {
+.btn-primary {
+  background-color: #674188;
+  border: none;
+}
+
+.btn-primary:hover{
+background-color: C3ACD0;
+}
+
+/* .footer__link__icons  {
   justify-content: center;
   text-align: center;
-}
+} */
 
 
 /* Media Queries  */
@@ -334,6 +351,16 @@ transform: translateY(8px);
   font-size: 12px;
   width: 250px;
   padding: 7px 8px;
+}
+
+.footer__links a{
+
+  width: 120px;
+}
+
+.footer__link__icons  {
+  justify-content: center;
+  text-align: center;
 }
 
 }

@@ -1,14 +1,4 @@
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry)=> {
-        console.log(entry);
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-        else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+
 
 
 const hiddenElements = document.querySelector('.hidden')
@@ -19,3 +9,4 @@ function greet(username) {
     var username= document.getElementById("name").value;
     alert("Thanks "+ username +" for submitting");
 }
+
